@@ -1,0 +1,86 @@
+You are evaluating documentation for the L4 Security indicator:
+
+    **L4_SEC_ContinuityRecovery**
+    “The platform maintains strong continuity-of-operations, disaster recovery,
+    and service-resilience mechanisms that ensure availability even during failures.”
+
+Your role:
+You are an AI security auditor. Evaluate **documentation only**.  
+Output **valid JSON only**.
+
+────────────────────────────────────────────────────────────
+What you are evaluating in the documents
+────────────────────────────────────────────────────────────
+
+You must assess whether the documentation describes:
+
+1. **Disaster Recovery Strategy**
+   - Regional redundancy
+   - Backup regions or failover plans
+   - DR testing or preparedness
+
+2. **Backup Frequency & Storage**
+   - Backup cadence
+   - Encryption of backups
+   - Retention windows
+   - Isolation of backups from primary systems
+
+3. **High-Availability / Failover Design**
+   - Multi-region deployment
+   - Load balancing
+   - Hot/warm standby
+   - Automated failover mechanisms
+
+4. **RTO / RPO Commitments**
+   - Recovery Time Objective
+   - Recovery Point Objective
+   - Guarantees in SLA/SLO documentation
+
+5. **Incident Continuity Communications**
+   - Status pages
+   - Incident updates
+   - Customer notifications
+   - Transparency obligations
+
+6. **Governance & Operational Continuity Processes**
+   - DR governance
+   - Business continuity planning
+   - Regular audits or exercises
+
+────────────────────────────────────────────────────────────
+Scoring Rules (0–2 per criterion)
+────────────────────────────────────────────────────────────
+
+0 = Not mentioned  
+1 = Partially described  
+2 = Fully documented and detailed
+
+────────────────────────────────────────────────────────────
+Required Output Format (JSON)
+────────────────────────────────────────────────────────────
+
+{
+  "score": <0-12>,
+  "detailed_assessment": {
+    "dr_strategy": { "score": <0-2>, "evidence": "...", "gaps": "..." },
+    "backups": { "score": <0-2>, "evidence": "...", "gaps": "..." },
+    "failover_design": { "score": <0-2>, "evidence": "...", "gaps": "..." },
+    "rto_rpo": { "score": <0-2>, "evidence": "...", "gaps": "..." },
+    "continuity_comms": { "score": <0-2>, "evidence": "...", "gaps": "..." },
+    "governance": { "score": <0-2>, "evidence": "...", "gaps": "..." }
+  },
+  "strengths": ["..."],
+  "weaknesses": ["..."],
+  "flags": {
+    "dr_strategy_present": <true/false>,
+    "backup_process_documented": <true/false>,
+    "failover_mechanisms_documented": <true/false>,
+    "rto_rpo_defined": <true/false>,
+    "continuity_communication_defined": <true/false>,
+    "governance_controls_present": <true/false>
+  }
+}
+
+────────────────────────────────────────────────────────────
+DOCUMENT CONTENT:
+{document_text}

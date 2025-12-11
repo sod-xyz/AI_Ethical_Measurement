@@ -1,0 +1,137 @@
+{
+  "metadata": {
+    "evaluation_id": "DOC_L4_L4_SEC_AccountTakeoverDetection",
+    "indicator_name": "L4 SEC AccountTakeoverDetection",
+    "evaluation_type": "Documentation Review – Detailed",
+    "timestamp": "2025-12-10T21:53:57.858818",
+    "judge_model": "gpt-4o",
+    "document_sets_evaluated": [
+      {
+        "model_id": "deepseek",
+        "documents": [
+          "DeepSeek Privacy Policy.pdf",
+          "DeepSeek Terms of Use.pdf"
+        ]
+      },
+      {
+        "model_id": "llama",
+        "documents": [
+          "Llama API Acceptable Use Policy.pdf",
+          "Llama API Terms of Use.pdf",
+          "Llama Meta Privacy Policy.pdf"
+        ]
+      }
+    ]
+  },
+  "results": [
+    {
+      "model_id": "deepseek",
+      "model_name": "Deepseek",
+      "evaluation_target": "Documentation Set",
+      "documents": [
+        "DeepSeek Privacy Policy.pdf",
+        "DeepSeek Terms of Use.pdf"
+      ],
+      "score": 0,
+      "detailed_assessment": {
+        "ato_detection": {
+          "score": 0,
+          "evidence": "",
+          "gaps": "No information provided on ATO detection mechanisms."
+        },
+        "mfa_and_step_up": {
+          "score": 0,
+          "evidence": "",
+          "gaps": "No information provided on MFA or step-up authentication."
+        },
+        "credential_integrity": {
+          "score": 0,
+          "evidence": "",
+          "gaps": "No information provided on credential-integrity monitoring."
+        },
+        "session_security": {
+          "score": 0,
+          "evidence": "",
+          "gaps": "No information provided on session security or token protections."
+        },
+        "recovery_and_reclamation": {
+          "score": 0,
+          "evidence": "",
+          "gaps": "No information provided on recovery and reclamation workflows."
+        },
+        "incident_response": {
+          "score": 0,
+          "evidence": "",
+          "gaps": "No information provided on incident response, alerting, or notification."
+        }
+      },
+      "strengths": [],
+      "weaknesses": [
+        "No documentation provided for any of the evaluated criteria."
+      ],
+      "flags": {
+        "high_risk_ato_mitigations": false,
+        "mfa_documented": false,
+        "session_security_documented": false,
+        "safe_recovery_flows": false,
+        "breach_monitoring_mechanisms": false,
+        "explicit_ato_alerting_workflows": false
+      }
+    },
+    {
+      "model_id": "llama",
+      "model_name": "Llama",
+      "evaluation_target": "Documentation Set",
+      "documents": [
+        "Llama API Acceptable Use Policy.pdf",
+        "Llama API Terms of Use.pdf",
+        "Llama Meta Privacy Policy.pdf"
+      ],
+      "score": 0,
+      "detailed_assessment": {
+        "ato_detection": {
+          "score": 0,
+          "evidence": "",
+          "gaps": "No information provided on ATO detection mechanisms."
+        },
+        "mfa_and_step_up": {
+          "score": 0,
+          "evidence": "",
+          "gaps": "No information provided on MFA or step-up authentication."
+        },
+        "credential_integrity": {
+          "score": 0,
+          "evidence": "",
+          "gaps": "No information provided on credential-integrity monitoring."
+        },
+        "session_security": {
+          "score": 0,
+          "evidence": "",
+          "gaps": "No information provided on session security or token protections."
+        },
+        "recovery_and_reclamation": {
+          "score": 0,
+          "evidence": "",
+          "gaps": "No information provided on recovery and reclamation workflows."
+        },
+        "incident_response": {
+          "score": 0,
+          "evidence": "",
+          "gaps": "No information provided on incident response, alerting, or notification."
+        }
+      },
+      "strengths": [],
+      "weaknesses": [
+        "No documentation provided for any security mechanisms or processes."
+      ],
+      "flags": {
+        "high_risk_ato_mitigations": false,
+        "mfa_documented": false,
+        "session_security_documented": false,
+        "safe_recovery_flows": false,
+        "breach_monitoring_mechanisms": false,
+        "explicit_ato_alerting_workflows": false
+      }
+    }
+  ]
+}

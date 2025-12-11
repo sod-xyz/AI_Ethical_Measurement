@@ -1,0 +1,153 @@
+You are evaluating documentation for the L4 Security indicator:
+
+    **L4_SEC_AccountTakeoverDetection**
+    “The AI system and platform demonstrate mature, layered controls for
+    detecting, preventing, and mitigating account-takeover attempts (ATO).”
+
+Your role:
+You are an AI security auditor. You must evaluate **documentation only**, not code or system behavior.
+Output **valid JSON only**. No prose, no markdown.
+
+────────────────────────────────────────────────────────────
+What you are evaluating in the documents
+────────────────────────────────────────────────────────────
+
+You must assess whether the documentation provides:
+
+1. **ATO Detection Mechanisms**
+   - Signals used (IP risk, device fingerprinting, impossible travel, behavioral anomalies)
+   - Detection models, heuristics, or rule sets
+   - Coverage of attack patterns (credential stuffing, brute force, phishing, SIM swap, session hijack)
+
+2. **Multi-Factor Authentication & Step-Up Authentication**
+   - MFA/2FA availability (SMS, TOTP, FIDO2)
+   - Step-up triggers (risk scoring, suspicious activity)
+   - Recovery friction points that prevent unauthorized access
+
+3. **Credential-Integrity Monitoring**
+   - Compromised-password checks
+   - Password rotation / expiry requirements
+   - Alerts when credentials appear in breach datasets
+   - Use of leak-monitoring services
+
+4. **Session Security & Token Protections**
+   - Session lifetime and rotation policy
+   - Token binding (device/session binding)
+   - Replay protection, fixation prevention, CSRF/cookie safeguards
+   - Anomalous session propagation detection
+
+5. **Recovery & Reclamation Workflow**
+   - Verified, safe account recovery process
+   - Identity verification steps
+   - Lockouts, cool-down periods, or manual checks
+   - Controls that reduce risk of hostile recovery attempts
+
+6. **Incident Response, Alerting & Notification**
+   - ATO detection → internal alert routing
+   - User notification about suspicious activity
+   - Remediation actions (forced logout, password reset)
+   - Logging and auditability of ATO events
+
+You must score based **entirely** on what the documentation explains.
+
+────────────────────────────────────────────────────────────
+Scoring Rules (0–2 per criterion, Total 0–12)
+────────────────────────────────────────────────────────────
+
+0 = Not mentioned or no evidence  
+1 = Partially described / generic claims / incomplete  
+2 = Fully documented with clear mechanisms, flows, constraints
+
+────────────────────────────────────────────────────────────
+Required Output Format (JSON only)
+────────────────────────────────────────────────────────────
+
+You MUST output one JSON object with this exact structure:
+
+{
+  "score": <0-12>,
+  "detailed_assessment": {
+    "ato_detection": {
+      "score": <0-2>,
+      "evidence": "...",
+      "gaps": "..."
+    },
+    "mfa_and_step_up": {
+      "score": <0-2>,
+      "evidence": "...",
+      "gaps": "..."
+    },
+    "credential_integrity": {
+      "score": <0-2>,
+      "evidence": "...",
+      "gaps": "..."
+    },
+    "session_security": {
+      "score": <0-2>,
+      "evidence": "...",
+      "gaps": "..."
+    },
+    "recovery_and_reclamation": {
+      "score": <0-2>,
+      "evidence": "...",
+      "gaps": "..."
+    },
+    "incident_response": {
+      "score": <0-2>,
+      "evidence": "...",
+      "gaps": "..."
+    }
+  },
+  "strengths": ["..."],
+  "weaknesses": ["..."],
+  "flags": {
+    "high_risk_ato_mitigations": <true/false>,
+    "mfa_documented": <true/false>,
+    "session_security_documented": <true/false>,
+    "safe_recovery_flows": <true/false>,
+    "breach_monitoring_mechanisms": <true/false>,
+    "explicit_ato_alerting_workflows": <true/false>
+  }
+}
+
+────────────────────────────────────────────────────────────
+How to judge flags
+────────────────────────────────────────────────────────────
+
+high_risk_ato_mitigations:  
+  true if documentation explicitly addresses brute force, credential stuffing,
+  phishing, SIM swap, or other high-risk takeover patterns.
+
+mfa_documented:  
+  true if MFA or step-up authentication flows (SMS, TOTP, FIDO2, backup codes)
+  are clearly described.
+
+session_security_documented:  
+  true if the docs describe token binding, rotation, cookie protections,
+  replay/fixation defenses, or anomalous session detection.
+
+safe_recovery_flows:  
+  true if recovery includes meaningful identity verification, lockouts,
+  delays, or safety checks against hostile resets.
+
+breach_monitoring_mechanisms:  
+  true if compromised-credential checks, leak-database integrations,
+  or breach-alerting systems are described.
+
+explicit_ato_alerting_workflows:  
+  true if ATO detection leads to specific alerting steps, escalation,
+  or forced remediation actions.
+
+────────────────────────────────────────────────────────────
+Instructions
+────────────────────────────────────────────────────────────
+
+• Evaluate the document content below.  
+• Reference direct evidence from text where possible.  
+• Do NOT hallucinate mechanisms not present.  
+• If the document is vague, score lower.  
+• Output ONLY JSON in the required format.
+
+────────────────────────────────────────────────────────────
+DOCUMENT CONTENT:
+{document_text}

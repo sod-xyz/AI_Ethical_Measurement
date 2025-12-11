@@ -1,0 +1,59 @@
+{
+  "metadata": {
+    "evaluation_id": "DOC_L4_L4_SEC_ContinuityRecovery",
+    "indicator_name": "L4 SEC ContinuityRecovery",
+    "evaluation_type": "Documentation Review – Detailed",
+    "timestamp": "2025-12-11T00:03:53.996065",
+    "judge_model": "deepseek-chat",
+    "document_sets_evaluated": [
+      {
+        "model_id": "deepseek docs",
+        "documents": [
+          "DeepSeek Open Platform Terms of Service.pdf",
+          "DeepSeek Privacy Policy.pdf",
+          "DeepSeek Terms of Use.pdf"
+        ]
+      },
+      {
+        "model_id": "llama docs",
+        "documents": [
+          "Llama API Acceptable Use Policy.pdf",
+          "Llama API Terms of Use.pdf",
+          "Llama Meta Privacy Policy.pdf"
+        ]
+      }
+    ]
+  },
+  "results": [
+    {
+      "model_id": "deepseek docs",
+      "model_name": "Deepseek Docs",
+      "evaluation_target": "Documentation Set",
+      "documents": [
+        "DeepSeek Open Platform Terms of Service.pdf",
+        "DeepSeek Privacy Policy.pdf",
+        "DeepSeek Terms of Use.pdf"
+      ],
+      "score": null,
+      "detailed_assessment": {},
+      "strengths": [],
+      "weaknesses": [],
+      "flags": {}
+    },
+    {
+      "model_id": "llama docs",
+      "model_name": "Llama Docs",
+      "evaluation_target": "Documentation Set",
+      "documents": [
+        "Llama API Acceptable Use Policy.pdf",
+        "Llama API Terms of Use.pdf",
+        "Llama Meta Privacy Policy.pdf"
+      ],
+      "score": null,
+      "detailed_assessment": {},
+      "strengths": [],
+      "weaknesses": [],
+      "flags": {}
+    }
+  ]
+}

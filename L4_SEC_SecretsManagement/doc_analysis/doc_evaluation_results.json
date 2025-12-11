@@ -1,0 +1,146 @@
+{
+  "metadata": {
+    "evaluation_id": "DOC_L4_L4_SEC_SecretsManagement",
+    "indicator_name": "L4 SEC SecretsManagement",
+    "evaluation_type": "Documentation Review – Detailed",
+    "timestamp": "2025-12-10T21:55:29.075989",
+    "judge_model": "gpt-4o",
+    "document_sets_evaluated": [
+      {
+        "model_id": "deepseek",
+        "documents": [
+          "DeepSeek Privacy Policy.pdf",
+          "DeepSeek Terms of Use.pdf"
+        ]
+      },
+      {
+        "model_id": "llama",
+        "documents": [
+          "Llama API Acceptable Use Policy.pdf",
+          "Llama API Terms of Use.pdf",
+          "Llama Meta Privacy Policy.pdf"
+        ]
+      }
+    ]
+  },
+  "results": [
+    {
+      "model_id": "deepseek",
+      "model_name": "Deepseek",
+      "evaluation_target": "Documentation Set",
+      "documents": [
+        "DeepSeek Privacy Policy.pdf",
+        "DeepSeek Terms of Use.pdf"
+      ],
+      "score": 0,
+      "detailed_assessment": {
+        "secret_minimization": {
+          "score": 0,
+          "evidence": "",
+          "gaps": "No guidance on secret minimization or redaction is provided."
+        },
+        "secret_retention": {
+          "score": 0,
+          "evidence": "",
+          "gaps": "No information on secret storage or retention practices is available."
+        },
+        "access_controls": {
+          "score": 0,
+          "evidence": "",
+          "gaps": "No description of access controls or staff visibility restrictions is present."
+        },
+        "backend_isolation": {
+          "score": 0,
+          "evidence": "",
+          "gaps": "No evidence of backend isolation or boundary guarantees is provided."
+        },
+        "governance_rotation": {
+          "score": 0,
+          "evidence": "",
+          "gaps": "No governance, rotation, or lifecycle policies are mentioned."
+        },
+        "logging_minimization": {
+          "score": 0,
+          "evidence": "",
+          "gaps": "No details on logging practices or telemetry minimization are available."
+        }
+      },
+      "strengths": [],
+      "weaknesses": [
+        "Lack of documentation on secret minimization and user guidance.",
+        "No information on secret storage and retention practices.",
+        "Absence of access control and staff visibility details.",
+        "No backend isolation or boundary guarantees described.",
+        "Missing governance, rotation, and lifecycle policies.",
+        "No logging and telemetry minimization practices documented."
+      ],
+      "flags": {
+        "secrets_minimized": false,
+        "short_retention_documented": false,
+        "staff_access_restricted": false,
+        "tenant_isolation_enforced": false,
+        "rotation_governance_defined": false,
+        "logging_minimized": false
+      }
+    },
+    {
+      "model_id": "llama",
+      "model_name": "Llama",
+      "evaluation_target": "Documentation Set",
+      "documents": [
+        "Llama API Acceptable Use Policy.pdf",
+        "Llama API Terms of Use.pdf",
+        "Llama Meta Privacy Policy.pdf"
+      ],
+      "score": 0,
+      "detailed_assessment": {
+        "secret_minimization": {
+          "score": 0,
+          "evidence": "No evidence provided.",
+          "gaps": "No guidance on secret minimization or redaction."
+        },
+        "secret_retention": {
+          "score": 0,
+          "evidence": "No evidence provided.",
+          "gaps": "No information on secret storage or retention practices."
+        },
+        "access_controls": {
+          "score": 0,
+          "evidence": "No evidence provided.",
+          "gaps": "No description of access controls or staff visibility restrictions."
+        },
+        "backend_isolation": {
+          "score": 0,
+          "evidence": "No evidence provided.",
+          "gaps": "No information on backend isolation or boundary guarantees."
+        },
+        "governance_rotation": {
+          "score": 0,
+          "evidence": "No evidence provided.",
+          "gaps": "No details on governance, rotation, or lifecycle policies."
+        },
+        "logging_minimization": {
+          "score": 0,
+          "evidence": "No evidence provided.",
+          "gaps": "No information on logging practices or telemetry minimization."
+        }
+      },
+      "strengths": [],
+      "weaknesses": [
+        "Lack of documentation on secret management practices.",
+        "No evidence of access control mechanisms.",
+        "Absence of backend isolation details.",
+        "No governance or rotation policies described.",
+        "Logging and telemetry practices are not mentioned."
+      ],
+      "flags": {
+        "secrets_minimized": false,
+        "short_retention_documented": false,
+        "staff_access_restricted": false,
+        "tenant_isolation_enforced": false,
+        "rotation_governance_defined": false,
+        "logging_minimized": false
+      }
+    }
+  ]
+}

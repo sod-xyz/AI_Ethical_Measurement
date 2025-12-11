@@ -1,0 +1,142 @@
+{
+  "metadata": {
+    "evaluation_id": "DOC_L4_L4_SEC_ContinuityRecovery",
+    "indicator_name": "L4 SEC ContinuityRecovery",
+    "evaluation_type": "Documentation Review – Detailed",
+    "timestamp": "2025-12-10T21:54:24.254804",
+    "judge_model": "gpt-4o",
+    "document_sets_evaluated": [
+      {
+        "model_id": "deepseek docs",
+        "documents": [
+          "DeepSeek Privacy Policy.pdf",
+          "DeepSeek Terms of Use.pdf"
+        ]
+      },
+      {
+        "model_id": "llama docs",
+        "documents": [
+          "Llama API Acceptable Use Policy.pdf",
+          "Llama API Terms of Use.pdf",
+          "Llama Meta Privacy Policy.pdf"
+        ]
+      }
+    ]
+  },
+  "results": [
+    {
+      "model_id": "deepseek docs",
+      "model_name": "Deepseek Docs",
+      "evaluation_target": "Documentation Set",
+      "documents": [
+        "DeepSeek Privacy Policy.pdf",
+        "DeepSeek Terms of Use.pdf"
+      ],
+      "score": 0,
+      "detailed_assessment": {
+        "dr_strategy": {
+          "score": 0,
+          "evidence": "",
+          "gaps": "No information provided on disaster recovery strategy, regional redundancy, backup regions, or DR testing."
+        },
+        "backups": {
+          "score": 0,
+          "evidence": "",
+          "gaps": "No details on backup frequency, encryption, retention, or isolation from primary systems."
+        },
+        "failover_design": {
+          "score": 0,
+          "evidence": "",
+          "gaps": "No description of multi-region deployment, load balancing, standby configurations, or automated failover."
+        },
+        "rto_rpo": {
+          "score": 0,
+          "evidence": "",
+          "gaps": "No RTO/RPO commitments or guarantees in SLA/SLO documentation mentioned."
+        },
+        "continuity_comms": {
+          "score": 0,
+          "evidence": "",
+          "gaps": "No information on status pages, incident updates, customer notifications, or transparency obligations."
+        },
+        "governance": {
+          "score": 0,
+          "evidence": "",
+          "gaps": "No mention of DR governance, business continuity planning, or regular audits/exercises."
+        }
+      },
+      "strengths": [],
+      "weaknesses": [
+        "Complete lack of documentation on all evaluated criteria."
+      ],
+      "flags": {
+        "dr_strategy_present": false,
+        "backup_process_documented": false,
+        "failover_mechanisms_documented": false,
+        "rto_rpo_defined": false,
+        "continuity_communication_defined": false,
+        "governance_controls_present": false
+      }
+    },
+    {
+      "model_id": "llama docs",
+      "model_name": "Llama Docs",
+      "evaluation_target": "Documentation Set",
+      "documents": [
+        "Llama API Acceptable Use Policy.pdf",
+        "Llama API Terms of Use.pdf",
+        "Llama Meta Privacy Policy.pdf"
+      ],
+      "score": 0,
+      "detailed_assessment": {
+        "dr_strategy": {
+          "score": 0,
+          "evidence": "No information provided.",
+          "gaps": "The documentation does not mention any disaster recovery strategy, regional redundancy, backup regions, or failover plans."
+        },
+        "backups": {
+          "score": 0,
+          "evidence": "No information provided.",
+          "gaps": "The documentation does not mention backup frequency, encryption, retention windows, or isolation of backups."
+        },
+        "failover_design": {
+          "score": 0,
+          "evidence": "No information provided.",
+          "gaps": "The documentation does not mention multi-region deployment, load balancing, hot/warm standby, or automated failover mechanisms."
+        },
+        "rto_rpo": {
+          "score": 0,
+          "evidence": "No information provided.",
+          "gaps": "The documentation does not mention any Recovery Time Objective or Recovery Point Objective commitments."
+        },
+        "continuity_comms": {
+          "score": 0,
+          "evidence": "No information provided.",
+          "gaps": "The documentation does not mention status pages, incident updates, customer notifications, or transparency obligations."
+        },
+        "governance": {
+          "score": 0,
+          "evidence": "No information provided.",
+          "gaps": "The documentation does not mention DR governance, business continuity planning, or regular audits or exercises."
+        }
+      },
+      "strengths": [],
+      "weaknesses": [
+        "The documentation lacks any mention of disaster recovery strategies.",
+        "There is no information on backup processes or frequency.",
+        "Failover mechanisms are not documented.",
+        "RTO and RPO commitments are undefined.",
+        "Incident continuity communications are not addressed.",
+        "Governance and operational continuity processes are absent."
+      ],
+      "flags": {
+        "dr_strategy_present": false,
+        "backup_process_documented": false,
+        "failover_mechanisms_documented": false,
+        "rto_rpo_defined": false,
+        "continuity_communication_defined": false,
+        "governance_controls_present": false
+      }
+    }
+  ]
+}
