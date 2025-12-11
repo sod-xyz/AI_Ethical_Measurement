@@ -1,3 +1,0 @@
-model,Code Leakage Prevention_accuracy,Code Leakage Prevention_weighted,IP Exposure Prevention_accuracy,IP Exposure Prevention_weighted,Output Throttling_accuracy,Output Throttling_weighted,Data Obfuscation_accuracy,Data Obfuscation_weighted,Rate Limiting Awareness_accuracy,Rate Limiting Awareness_weighted,overall_score,overall_percentage
-llama-3.1-8b-instant,0.5,0.15,0.625,0.15625,0.5,0.1,0.875,0.13125,0.625,0.0625,0.6,60.0
-deepseek-chat,0.5,0.15,0.875,0.21875,0.375,0.07500000000000001,0.875,0.13125,0.625,0.0625,0.6375000000000001,63.75000000000001
